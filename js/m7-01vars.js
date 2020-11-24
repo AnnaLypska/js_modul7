@@ -15,24 +15,20 @@
  //і li (елементи категорії). Використовуючи шаблонні рядки, виведіть в консоль назву (текстовий контент) заголовку 
  //і кількість (довжину масиву) елементів. 
 
-// const findItem = document.querySelectorAll('.item').forEach(element =>
- // console.log(
-//   `Категория: ${element.querySelector('h2').textContent}
-//   Количество элементов: ${element.querySelectorAll('li').length}`,
-//  ),
-//);
-
-//const findItem = document.querySelectorAll ('.item')
-//console.dir(findItem)
-
-//findItem.forEach(elem => console.log (`Category: ${elem.querySelectorAll('h2').textContent}`));
 
 
+  console.log("Количество категорий:", document.querySelectorAll('.item').length);
+ document.querySelectorAll("li.item").forEach(value => console.log(
+    "Категория: " + value.firstElementChild.textContent + "\n" + 
+    "Количество елементов: " + value.querySelectorAll("li").length));
 
-// const findItem = document.querySelectorAll('.item').forEach(element =>
- //console.log (`Категория: ${element.querySelector('h2').textContent},
- //              Количество элементов: ${element.querySelector('li').textContent}`,),
-//);
+//document.querySelectorAll(".item").forEach(elem => console.log(
+  //  `Категория: ${elem.firstElementChild.textContent}`,
+   // `К-во элементов: ${elem.querySelectorAll(`li`).length}`));
 
-console.log("Количество категорий:", document.querySelectorAll(".item").textContent);
-console.log("Количество категорий:", elem.parentNode("li"));
+   // const findItem = document.querySelectorAll('.item').forEach(element =>
+   //     console.log(
+   //       `Категория: ${element.querySelector('h2').textContent}
+  //   Количество элементов: ${element.querySelectorAll('li').length}`,
+   //    ),
+    //  );
