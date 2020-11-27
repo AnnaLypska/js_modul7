@@ -15,7 +15,7 @@ const ingredients = [
   // Для создания DOM-узлов используй document.createElement().
 
   const itemsRef = document.createElement('ul');
-  itemsRef.classList.add('product-card');
+  itemsRef.classList.add('js-product-card');
 
   const listRef = document.createElement('li');
   listRef.textContent = ingredients[0];
@@ -29,3 +29,5 @@ const ingredients = [
   rootRef.appendChild(itemsRef)
 
   console.log(itemsRef);
+
+  //document.querySelector(`#ingredients`).innerHTML = ingredients.map(array => `<li>${array}</li>`).join('')
